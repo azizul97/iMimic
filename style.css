@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'SF Pro Display', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+body {
+    background-color: #fafafa;
+    color: #1d1d1f;
+    line-height: 1.4;
+}
+
+.navbar {
+    background-color: #1d1d1f;
+    padding: 10px 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-menu {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-menu a {
+    color: #f5f5f7;
+    text-decoration: none;
+    font-size: 14px;
+    padding: 0 20px;
+    opacity: 0.8;
+}
+
+.nav-menu a:hover {
+    opacity: 1;
+}
+
+.hero {
+    text-align: center;
+    padding: 100px 20px 60px;
+    background-color: #fff;
+}
+
+.hero h1 {
+    font-size: 56px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    background-image: url('image.webp'); /* Placeholder image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #fff; /* White text for contrast */
+    padding: 20px 40px; /* Adds space around text to show background */
+    display: inline-block; /* Limits background to text area */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8); /* Optional: Improves readability */
+}
+
+.hero p {
+    font-size: 28px;
+    color: #6e6e73;
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #0071e3;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 980px;
+    font-size: 17px;
+    margin: 10px;
+}
+
+.cta-button:hover {
+    background-color: #0077ed;
+}
+
+.features {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+}
+
+.feature-card {
+    text-align: center;
+}
+
+.feature-card h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.feature-card p {
+    color: #6e6e73;
+    font-size: 17px;
+}
+
+.footer {
+    background-color: #f5f5f7;
+    padding: 40px 20px;
+    text-align: center;
+    color: #6e6e73;
+    font-size: 12px;
+}
+
+@media (max-width: 768px) {
+    .features {
+        grid-template-columns: 1fr;
+    }
+    
+    .hero h1 {
+        font-size: 40px;
+        padding: 15px 30px; /* Adjusted padding for smaller screens */
+    }
+    
+    .hero p {
+        font-size: 22px;
+    }
+    
+    .nav-menu {
+        flex-direction: column;
+        padding: 10px 0;
+    }
+    
+    .nav-menu a {
+        padding: 10px 0;
+    }
+}
